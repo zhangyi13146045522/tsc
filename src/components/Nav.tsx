@@ -16,13 +16,13 @@ export const Nav = () => {
   return (
     <div className="layout-navbar">
       <div className="layout-nav-list">
-        <div className="layout-nav-item" onClick={(e) => jump(e, "/dashboard")}>
+        <div className="layout-nav-item active" onClick={(e) => jump(e, "/dashboard")}>
           <i className="pi pi-home"></i>
           <span>Dashboard</span>
         </div>
 
         <div
-          className="layout-nav-item active"
+          className="layout-nav-item"
           onClick={(e) => jump(e, "/order")}
         >
           <i className="pi pi-credit-card"></i>
