@@ -25,7 +25,7 @@ export default function RootLayout({
           <Header />
           <div className="main-container">
             <Nav />
-            {children}
+            <div className="main-right">{children}</div>
           </div>
         </PrimeReactProvider>
       </body>
