@@ -8,7 +8,7 @@ import { Tag } from "primereact/tag";
 import { InputText } from "primereact/inputtext";
 import { Calendar } from "primereact/calendar";
 import { Dropdown } from "primereact/dropdown";
-
+import Link from 'next/link'
 export default function OrderPage() {
   const formatOrderStatus = (rowData: any) => {
     let severity: any = "";
@@ -30,7 +30,9 @@ export default function OrderPage() {
     <div className="main-card-light">
       <div className="main-title-contaienr mt30">
         <p className="main-title">ORDER LIST</p>
-        <Button label="Create Order" severity="help" rounded />
+        <Link href="/operatingOrder">
+          <Button label="Create Order" severity="help" rounded />
+        </Link>
       </div>
 
       <div className="search-form-container mt30">
