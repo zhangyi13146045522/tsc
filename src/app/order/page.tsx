@@ -31,7 +31,7 @@ export default function OrderPage() {
       <div className="main-title-contaienr mt30">
         <p className="main-title">ORDER LIST</p>
         <Link href="/operatingOrder">
-          <Button label="Create Order" severity="help" rounded />
+          <Button label="Create Order" severity="help" rounded/>
         </Link>
       </div>
 
